@@ -16,7 +16,7 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Prof", name: "teacher", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
-  #     - {label: "Début", name: "startTime", widget: "datetime"}
+      - {label: "Début", name: "startTime", widget: "datetime"}
   #     - {label: "Fin", name: "endTime", widget: "datetime"}
       - {label: "Template", name: "template", widget: "hidden", default: "training"}
   # - name: "teachers" # Used in routes, e.g. /admin/collections/blog
