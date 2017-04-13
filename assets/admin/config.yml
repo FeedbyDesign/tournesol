@@ -19,6 +19,7 @@ collections:
       - {label: "Début", name: "startTime", widget: "datetime"}
       - {label: "Fin", name: "endTime", widget: "datetime"}
       - {label: "Template", name: "template", widget: "hidden", default: "training"}
+    card: {type: "alltype", text: "title"}
   - name: "teachers" # Used in routes, e.g. /admin/collections/blog
     label: "Profs" # Used in the UI
     folder: "data/teachers" # The path to the folder where the documents are stored
@@ -35,3 +36,4 @@ collections:
       - {label: "image 2", name: "pic2", widget: "image"}
       - {label: "image 3", name: "pic3", widget: "image"}
       - {label: "Template", name: "template", widget: "hidden", default: "teacher"}
+    card: {type: "alltype", text: "title"}
