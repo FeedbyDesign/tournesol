@@ -11,7 +11,7 @@ collections:
     label: "Stages" # Used in the UI
     folder: "data/trainings" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}{{month}}{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Prof", name: "teacher", widget: "string"}
@@ -30,4 +30,21 @@ collections:
       - {label: "N° de tel.", name: "telephone", widget: "string"}
       - {label: "Site web", name: "url", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Photo de profil", name: "profilePic", widget: "image"}
+      - {label: "image 1", name: "pic1", widget: "image"}
+      - {label: "image 2", name: "pic2", widget: "image"}
+      - {label: "image 3", name: "pic3", widget: "image"}
       - {label: "Template", name: "template", widget: "hidden", default: "teacher"}
+  # - name: "blog" # Used in routes, e.g. /admin/collections/blog
+  #   label: "Blog" # Used in the UI
+  #   folder: "data/markdown" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Featured Image", name: "image", widget: "image"}
+  #     - {label: "Image path (../images/<myImg.ext>)", name: "imagePath", widget: "string"}
+  #     - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
