@@ -30,10 +30,10 @@ collections:
       - {label: "N° de tel.", name: "telephone", widget: "string"}
       - {label: "Site web", name: "url", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
-      - {label: "Photo de profil", name: "profilePic", widget: "image"}
-      - {label: "image 1", name: "pic1", widget: "image"}
-      - {label: "image 2", name: "pic2", widget: "image"}
-      - {label: "image 3", name: "pic3", widget: "image"}
+      # - {label: "Photo de profil", name: "profilePic", widget: "image"}
+      # - {label: "image 1", name: "pic1", widget: "image"}
+      # - {label: "image 2", name: "pic2", widget: "image"}
+      # - {label: "image 3", name: "pic3", widget: "image"}
       - {label: "Template", name: "template", widget: "hidden", default: "teacher"}
 
 
