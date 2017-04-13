@@ -16,9 +16,10 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Prof", name: "teacher", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
-      - {label: "Début", name: "startTime", widget: "datetime"}
-      - {label: "Fin", name: "endTime", widget: "datetime"}
+      - {label: "Début", name: "startTime", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
+      - {label: "Fin", name: "endTime", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
       - {label: "Template", name: "template", widget: "hidden", default: "training"}
+
   - name: "teachers" # Used in routes, e.g. /admin/collections/blog
     label: "Profs" # Used in the UI
     folder: "data/teachers" # The path to the folder where the documents are stored
@@ -36,6 +37,8 @@ collections:
       # - {label: "image 3", name: "pic3", widget: "image", required: false}
       # - {label: "Template", name: "template", widget: "hidden", default: "teacher"}
 
+# For full example:
+# https://github.com/netlify/netlify-cms/blob/master/example/config.yml
 
   # - name: "blog" # Used in routes, e.g. /admin/collections/blog
   #   label: "Blog" # Used in the UI
