@@ -6,6 +6,8 @@ backend:
 media_folder: "data/images" # Media files will be stored in the repo under data/images
 # public_folder: "../images" # The src attribute for uploaded media will begin with /images/uploads
 
+# TODO: ajouter champs "Visible"
+
 collections:
   - name: "trainings" # Used in routes, e.g. /admin/collections/blog
     label: "Stages" # Used in the UI
